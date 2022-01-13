@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>MEC Wine Menu & Map</title>
+  <script src="navigation.js" defer></script>
+</head>
+<body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>MEC Wine Menu</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="france.html"><span aria-hidden="true">01</span>France</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="greece.html"><span aria-hidden="true">02</span>Greece</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="spain.html"><span aria-hidden="true">03</span>Spain</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--home">
+    <div>
+      
+      
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1"><span class="d-block fs-900 ff-serif text-white">Wine List</span>MEC Wine List & Map</h1>
+      
+      <p>Our Wine list is a collection ranging from old world wines, to ecclectic and innovative wines, representing the best and most interesting wines from right here in Oregon, to Europe and the Medeterranian.</p>
+    </div>
+    <div>
+      <a href="france.html" class="large-button uppercase ff-serif text-dark bg-white">Menu</a>
+    </div>
+  </main>
+
+
+</body>
+</html>

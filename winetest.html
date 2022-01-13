@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Space for Art</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="destination">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="france.html"><span aria-hidden="true">01</span>France</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="greece.html"><span aria-hidden="true">02</span>Greece</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="spain.html"><span aria-hidden="true">03</span>Spain</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--destination flow">
+    <h1 class="numbered-title"><span aria-hidden="true">02</span>Wine Regions in Greece</h1>
+    
+    <picture id="moon-image">
+<!--       <source srcset="assets/destination/image-moon.webp" type="image/webp">
+ -->      <img src="assets/destination/central-greece.png" alt="the moon">
+    </picture>
+    <picture hidden id="mars-image">
+<!--       <source srcset="assets/destination/image-mars.webp" type="image/webp">
+ -->      <img src="assets/destination/peloponnese.png" alt="the planet mars">
+    </picture>
+    <picture hidden id="europa-image">
+<!--       <source srcset="assets/destination/image-europa.webp" type="image/webp">
+ -->      <img src="assets/destination/thessalia.png" alt="the planet europa">
+    </picture>
+    <picture hidden id="titan-image">
+<!--       <source srcset="assets/destination/image-titan.webp" type="image/webp">
+ -->      <img src="assets/destination/epirus.png" alt="the moon titan">
+    </picture>
+
+    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+        <button aria-selected="true" role="tab" aria-controls="moon-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="0" data-image="moon-image">Central Greece</button>
+        <button aria-selected="false" role="tab" aria-controls="mars-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="mars-image">peloponnese</button>
+        <button aria-selected="false" role="tab" aria-controls="europa-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="europa-image">thessalia</button>
+        <button aria-selected="false" role="tab" aria-controls="titan-tab" class="uppercase ff-sans-cond text-accent letter-spacing-2" tabindex="-1" data-image="titan-image">epirus</button>
+    </div>
+
+    <!-- The moon -->
+    <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Central Greece</h2>
+
+      <p>Central Greece includes Attica and Thessaly and is divided by the Agrafa and Pindus mountains, known as the spine of Greece, extending south to Athens. The landscape is often harsh and forbidding, with impassable gorges and surrounding deep forests.
+
+In Central Greece’s northern part, mostly red wine grapes are grown, including Xinomavro and Limniona. Xinomavro is grown in Rapsani, in the foothills of Mount Olympus, the home of the Greek gods in Greek mythology. It’s often blended with Krasato, a deep, red wine high in alcohol. The area has been referred to as the Rhone of Greece.</p>
+
+
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">$55</h3>
+          <p class="ff-serif uppercase">Savvatiano 2018</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Notes</h3>
+          <p class="ff-serif uppercase">Clear in color with ripe pear, hint of banana, vibrant refreshing tropical flavors like guava with balanced acidity and a long-lasting aftertaste of summer fruits</p>
+        </div>
+        <div>
+
+        <picture>
+      <img src="assets/destination/savvatiano2018.png" alt="the moon">
+        </picture>
+      </div>
+      </div>
+    </article>
+
+
+    
+    <!-- Peloponnese -->
+    <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Peloponnese</h2>
+
+      <p>The Peloponnese wine region locates on a peninsula in southern Greece, connected to Central Greece by the Isthmus of Corinth land bridge. Premium wines are developed here from a combination of particular terroir and autochthones grape varieties. The landscape is diverse, with snow-capped mountains, rugged valleys, and paradisiac beaches. This geography allows the formation of a unique microclimate, providing hot days and cold nights to develop outstanding grapes. The Peloponnesian wines combine indigenous varieties such as Moschofilero, Agiorgitiko, and Mavrodaphne with traditional grapes in original blends.</p>
+
+      
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">$45</h3>
+          <p class="ff-serif uppercase">Santameriana Amphora 2019</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Notes</h3>
+          <p class="ff-serif uppercase">A noticeably “orange” wine, with a copper color, and well integrated tannins. Aromas feature complex notes of dried apricot, honeycomb, orange peel, and intense minerality.</p>
+        </div>
+              <div>
+ 
+        <picture>
+      <img src="assets/destination/savvatiano2018.png" alt="the moon">
+        </picture>
+      </div>
+      </div>
+    </article>
+    
+    <!-- thessalia -->
+    <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">thessalia</h2>
+
+      <p>The Thessalia (or Thessaly) wine region is located in the northern part of Central Greece on a plain surrounded by the Pagasitikos Gulf, the Aegean Sea, Pindos Mountains, and Mount Olympus. Historical references to region’s wine date back as far as 1295, when taxes were levied on wine by the Lord of Thessaly. Like most of its neighboring Greek regions, Thessalia has moderate rainfall and hot, dry summers. The area produces white, rosé and red wines in various styles, including dry, semi-dry and semi-sweet wines.</p>
+  
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">$35</h3>
+          <p class="ff-serif uppercase">2016 Katsaros Xinomavro Valos Thessalia</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Notes</h3>
+          <p class="ff-serif uppercase">"Gorgeous ripe red cherry and raspberry aromas pull you in. The palate is a surprise, with Nebbiolo-like drying tannins and dark earthy tones. An Old World wine that begs for roast lamb to smooth it out!"</p>
+        </div>
+      </div>
+    </article>
+    
+    <!-- epirus -->
+    <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
+      <h2 class="fs-800 uppercase ff-serif">Epirus</h2>
+
+      <p>Epirus is a region in the north-west of mainland Greece, characterized by its rugged, mountainous landscape. Epirus sits on the Ionian coast and is bordered to the north by Albania and to the south by the administrative region of West Greece. Despite winemaking traditions, Epirus area is rich of cultural and natural resources and has a long history of winemaking. The region’s signature sparkling wine can be tasted while overlooking amazing mountain landscapes or while soaking up some sun on the Ionian coast. The capital of the Epirus region, Ioannina is a humble and relaxed university town on the shores of the Pamvotida Lake. Town has stunning historical heart featuring old monuments, museums and traditional houses as well as cool cafés and plenty of delicious eateries.</p>
+
+      
+
+
+      <div class="destination-meta flex">
+        <div>
+          <h3 class="text-accent fs-200 uppercase">$25</h3>
+          <p class="ff-serif uppercase">2019 Domaine Glinavos "Zitsa" Debina</p>
+        </div>
+        <div>
+          <h3 class="text-accent fs-200 uppercase">Notes</h3>
+          <p class="ff-serif uppercase">a round, waxy white with quince and orange blossom flavors. Meyer-lemon acidity gives it a gentle lift, just enough that it’s not tiring and doesn’t get in the way of its plush, comforting feel.</p>
+        </div>
+      </div>
+      
+    </article>
+  </main>
+  
+<body>
+
+
+  
+</body>
+</html>

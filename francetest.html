@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Space for Art</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+
+</head>
+
+<body class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav> 
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>France</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Greece</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Spain`</a>
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--crew flow">
+    <h1 class="numbered-title"><span aria-hidden="true">01</span> Alsace, France</h1>
+    
+    <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"><span class="sr-only">one</span></button>
+      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1"><span class="sr-only">two</span></button>
+      <button aria-selected="false" aria-controls="pilot-tab" role="tab" data-image="pilot-image" tabindex="-1"><span class="sr-only">three</span></button>
+      <button aria-selected="false" aria-controls="crew-tab" role="tab" data-image="crew-image" tabindex="-1"><span class="sr-only">four</span></button>
+    </div>
+    
+    <!-- one -->
+    <article class="crew-details flow" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">$53.99</h2>
+        <p class="fs-700 uppercase ff-serif">2000 Trimbach Pinot Gris Vendanges Tardives</p>
+      </header>
+      <p>Alsace, in the far north-eastern corner of France, stands out from other French wine regions thanks to its strong Franco-Germanic influences. These are the results of the region having switched back and forth between German and French sovereignty in recent centuries ? and are evident not only in Alsatian architecture and culture, but also in the wines.
+
+Alsace’s wines are produced under three key appellations:?Alsace and Alsace Grand Cru for still white wines (both sweet and dry), and Cremant d’Alsace for sparkling. Almost all wine produced in this region fits into one of these three designations. The Alsace Grand Cru wines are produced from one of 51 favored vineyards distributed along the length of the region.</p>
+              <picture>
+      <img src="assets/crew/france ages map.png">
+        </picture>
+    </article> 
+    
+    <!-- mission specialist -->
+    <article hidden class="crew-details flow" id="mission-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">$23.00</h2>
+        <p class="fs-700 uppercase ff-serif">2014 Trimbach Riesling</p>
+      </header>
+      <p>Riesling is the most emblematic of Alsatian grape varieties and this wonderful example offers a delicate bouquet of ginger and pineapple, a palate of white peach, quince and lemon with a persistent, pure and dry finish. While many of Trimbach’s wines are primed for age, plan to drink this one tonight!
+      </p>
+    </article> 
+    
+    <!-- pilot -->
+    <article hidden class="crew-details flow" id="pilot-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">$30</h2>
+        <p class="fs-700 uppercase ff-serif">AOC ALSACE PINOT NOIR
+CLOS SAINTE ODILE
+2017</p>
+      </header>
+      <p>A beautiful ruby colour. A frank and intense nose with special notes of red fruit (currant and raspberry) good structured, well balanced in its tannins.
+
+To serve between 10° and 12°C.
+
+Alcohol vol. : 12 % alc./vol.
+Residual sugar : 0.59  g/l
+Total acidity (tartric): 5,00 g/l
+
+ 
+
+Keeping : 6 to 8 years.</p>
+    </article> 
+    
+    <!-- engineer -->
+    <article hidden class="crew-details flow" id="crew-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <h2 class="fs-600 ff-serif uppercase">$30.29</h2>
+        <p class="fs-700 uppercase ff-serif">2019 Louis Latour Pouilly-Fuisse
+</p>
+      </header>
+      <p>
+2019 Louis Latour Pouilly-Fuisse This 2019 vintage shows a green-gold color, and delicate fruit aromas of melons and pears with underlying notes of almonds on the nose that are disarmingly seductive. On the palate there is a round and full herbal fruitiness that complements the crisp acidity leading to a satisfying finish.
+
+Louis Latour
+Maison Louis Latour is one of the most highly-respected négociant-éléveurs in Burgundy. Maison Louis Latour is the producer of some of the finest Burgundian wines but has also pioneered the production of fine wines from outside of the confines of Burgundy. These wines from the Ardèche and the Côteaux de Verdon are slowly gaining esteem for their unmatchable quality outside of Burgundy.</p>
+    </article> 
+    
+    
+    <picture id="commander-image">
+<!--       <source srcset="assets/crew/image-douglas-hurley.webp" type="image/webp">
+ -->      <img src="assets/crew/2000-Trimbach-Pinot-Gris-Vendanges-Tardives.png" alt="Douglas Hurley">
+    </picture>
+    <picture hidden id="mission-image">
+<!--       <source srcset="assets/crew/image-mark-shuttleworth.webp" type="image/webp">
+ -->      <img src="assets/crew/2019-Louis-Latour-Pouilly-Fuisse.png" alt="Douglas Hurley">
+    </picture>
+    <picture hidden id="pilot-image">
+<!--       <source srcset="assets/crew/image-victor-glover.webp" type="image/webp">
+ -->      <img src="assets/crew/pinot-noir-clos-ste-odile.png" alt="Douglas Hurley">
+    </picture>
+    <picture hidden id="crew-image">
+<!--       <source srcset="assets/crew/image-anousheh-ansari.webp" type="image/webp">
+ -->      <img src="assets/crew/Trimbach_Riesling_BOT_NV_ea739749-7fb9-47d6-af3e-5aa619e3eec3_2048x.png" alt="Douglas Hurley">
+    </picture>
+  </main>
+</body>
+</html>
